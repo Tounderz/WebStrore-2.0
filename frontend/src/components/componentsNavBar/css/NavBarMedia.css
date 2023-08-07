@@ -1,0 +1,5 @@
+@media screen and (max-width: 968px) {
+    .navbar {
+        max-height: 15em;
+    }
+}

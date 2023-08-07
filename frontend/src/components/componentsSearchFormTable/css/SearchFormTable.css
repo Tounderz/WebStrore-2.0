@@ -1,0 +1,33 @@
+.div-search {
+    margin-top: 1%;
+    display: flex;
+}
+
+.form-select-search {
+    max-width: 8rem;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.form-control-search {
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.button_search_table {
+    margin-left: 1%;
+    background: local;
+    color: #3AD505;
+    text-decoration: none;
+    height: 35px;
+    width: 70px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #3AD505;
+}
+
+.button_search_table:hover {
+    letter-spacing: 0;
+    color: #3AD505;
+    border-color: #3AD505;
+    box-shadow: 0 0 20px #3AD505;
+}

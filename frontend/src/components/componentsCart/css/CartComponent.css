@@ -1,0 +1,56 @@
+.card_basket {
+    width: 15em;
+    background: none;
+    border-radius: 20px;
+}
+
+.cardImgBasket {
+    width: 15em;
+    height: 15em;
+    border-radius: 20px;
+}
+
+.card_title_cart {
+    height: 2em;
+}
+
+.row_cart_card_button {
+    margin-left: 5px;
+}
+
+.button_card_to_pay {
+    margin: 1%;
+    background: local;
+    color: #276AA2;
+    text-decoration: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #276AA2;
+}
+
+.button_card_to_pay:hover {
+    letter-spacing: 0;
+    color: #276AA2;
+    border-color: #276AA2;
+    box-shadow: 0 0 20px #276AA2;
+}
+
+.button_card_remove {
+    margin: 1%;
+    margin-left: 10px;
+    background: local;
+    color: #DF0000;
+    text-decoration: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #DF0000;
+}
+
+.button_card_remove:hover {
+    letter-spacing: 0;
+    color: #DF0000;
+    border-color: #DF0000;
+    box-shadow: 0 0 20px #DF0000;
+}

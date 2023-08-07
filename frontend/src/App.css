@@ -1,0 +1,74 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root > div {
+  margin: 0;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="login"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.text-bg {
+  text-align:center;
+  position:absolute;
+  top:30%;
+  width:100%;
+  bottom:10%;
+  color: #FFF;
+  text-shadow: -2px 0 0 #337AB7, 0 -2px 0 #337AB7, 2px 0 0 #337AB7, 0 2px 0 #337AB7, -2px -2px 0 #337AB7, 2px 2px 0 #337AB7, -2px 2px 0 #337AB7, 2px -2px 0 #337AB7;
+}
+
+.svg :hover {
+  transition: all;
+  fill: red;
+}
+
+.error_message {
+  text-align: center;
+  color: red;
+  margin-top: 2%;
+}
+
+#contained-modal-title-vcenter {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+}

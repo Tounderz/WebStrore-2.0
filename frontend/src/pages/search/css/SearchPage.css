@@ -1,0 +1,13 @@
+.searchFonPage {
+  background-image: url(../../../components/img/serchFon.jpg);
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align:center;
+  position:absolute;
+  width:100%;
+  height: 100%;
+  color: #FFF;
+  text-shadow: -2px 0 0 #000000, 0 -2px 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, -2px -2px 0 #000000, 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}

@@ -1,0 +1,13 @@
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.csproj.AssemblyReference.cache
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.AssemblyInfoInputs.cache
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.AssemblyInfo.cs
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.csproj.CoreCompileInputs.cache
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\bin\Debug\net7.0\Store.Data.deps.json
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\bin\Debug\net7.0\Store.Data.dll
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\bin\Debug\net7.0\Store.Data.pdb
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.dll
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\refint\Store.Data.dll
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.pdb
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\ref\Store.Data.dll
+C:\Users\basta\source\repos\WebStrore-2.0\backend\Store.Data\obj\Debug\net7.0\Store.Data.sourcelink.json

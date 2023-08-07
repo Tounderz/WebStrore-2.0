@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+F+J/bOI4VZt0Nirpnb8wLrpVhEcRqEScqGcSt1ol0uZDOSBSu6YzwLeUjBbdSlyVBXAqewGhAkjvaVfHYnrew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\basta\\source\\repos\\WebStrore-2.0\\backend\\Store.Data\\Store.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\basta\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\basta\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\basta\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

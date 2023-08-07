@@ -1,0 +1,69 @@
+.col_button_info {
+    text-align: right;
+}
+
+.button_update_info {
+    color: rgb(80, 179, 107);
+    text-decoration: none;
+    background: none;
+    max-width: 100%; 
+    border: 2px solid rgb(0, 122, 202);
+    transition: clip-path 1s linear; 
+    clip-path: polygon(
+      2px 0,
+      2px 0, 2px 2px,
+      100% 2px,
+      100% 2px, calc(100% - 2px) 2px,
+      calc(100% - 2px) 100%,
+      calc(100% - 2px) 100%, calc(100% - 2px) calc(100% - 2px),
+      0 calc(100% - 2px),
+      0 calc(100% - 2px), 2px calc(100% - 2px)
+    );
+  }
+  
+  .button_update_info:hover {
+    color:rgb(0, 122, 202);
+    clip-path: polygon(
+      2px 0,
+      100% 0, 100% 2px,
+      100% 2px,
+      100% 100%, calc(100% - 2px) 100%,
+      calc(100% - 2px) 100%,
+      0 100%, 0 calc(100% - 2px),
+      0 calc(100% - 2px),
+      0 0, 2px 0
+    );
+  }
+  
+  .button_remove_info {
+    color: white;
+    text-decoration: none;
+    background: none;
+    max-width: 100%;
+    border: 2px solid rgb(204, 0, 0);
+    transition: clip-path 1s linear;
+    clip-path: polygon(
+      2px 0,
+      2px 0, 2px 2px,
+      100% 2px,
+      100% 2px, calc(100% - 2px) 2px,
+      calc(100% - 2px) 100%,
+      calc(100% - 2px) 100%, calc(100% - 2px) calc(100% - 2px),
+      0 calc(100% - 2px),
+      0 calc(100% - 2px), 2px calc(100% - 2px)
+    );
+  }
+  
+  .button_remove_info:hover {
+    color:rgb(204, 0, 0);
+    clip-path: polygon(
+      2px 0,
+      100% 0, 100% 2px,
+      100% 2px,
+      100% 100%, calc(100% - 2px) 100%,
+      calc(100% - 2px) 100%,
+      0 100%, 0 calc(100% - 2px),
+      0 calc(100% - 2px),
+      0 0, 2px 0
+    );
+  }

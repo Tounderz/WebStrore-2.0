@@ -1,0 +1,144 @@
+.fon_admin_page {
+  background-image: url(../../../components/img/adminFon.jpg);
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  text-align:center;
+  align-items:initial;
+  position:absolute;
+  min-width:100%;
+  min-height: 100%;
+  color: #FFF;
+  text-shadow: -2px 0 0 #000000, 0 -2px 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, -2px -2px 0 #000000, 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.col_listgroup_table {
+  margin-top: 1%;
+}
+
+.col_table_admin {
+  max-width: 90vw;
+}
+
+.listgroup_table {
+  max-width: 10em;
+  border-radius: 10px;
+}
+
+.listgroup_item {
+  background: none;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 10px;
+}
+
+.listgroup_item.active {
+  background: none;
+  border-color: rgb(19, 161, 0) rgb(19, 161, 0) rgb(21, 11, 163) rgb(21, 11, 163);
+  color: rgb(19, 161, 0);
+  font-size: 20px;
+}
+
+.col_listgroup_button {
+  max-width: 10vw;
+}
+
+.listgroup_button {
+  margin-top: 10%;
+  border: 1px solid;
+  border-color: rgb(19, 161, 0) rgb(19, 161, 0) rgb(21, 11, 163) rgb(21, 11, 163);
+  border-radius: 10px;
+}
+
+.listgroup_item_button {
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.listgroup_item_button:hover {
+  text-shadow: 0 0 25px #03DE00;
+}
+
+.col_table {
+  max-width: 80vw;
+}
+
+.table {
+  margin-top: 15px;
+  border:#FFF;
+  color: #FFF;
+}
+
+.button_update {
+  color: white;
+  text-decoration: none;
+  background: none;
+  max-width: 100%; 
+  border: 2px solid rgb(3, 150, 22);
+  transition: clip-path 1s linear; 
+  clip-path: polygon(
+    2px 0,
+    2px 0, 2px 2px,
+    100% 2px,
+    100% 2px, calc(100% - 2px) 2px,
+    calc(100% - 2px) 100%,
+    calc(100% - 2px) 100%, calc(100% - 2px) calc(100% - 2px),
+    0 calc(100% - 2px),
+    0 calc(100% - 2px), 2px calc(100% - 2px)
+  );
+}
+
+.button_update:hover {
+  color:rgb(3, 150, 22);
+  clip-path: polygon(
+    2px 0,
+    100% 0, 100% 2px,
+    100% 2px,
+    100% 100%, calc(100% - 2px) 100%,
+    calc(100% - 2px) 100%,
+    0 100%, 0 calc(100% - 2px),
+    0 calc(100% - 2px),
+    0 0, 2px 0
+  );
+}
+
+.button_remove {
+  color: white;
+  text-decoration: none;
+  background: none;
+  max-width: 100%;
+  border: 2px solid rgb(204, 0, 0);
+  transition: clip-path 1s linear;
+  clip-path: polygon(
+    2px 0,
+    2px 0, 2px 2px,
+    100% 2px,
+    100% 2px, calc(100% - 2px) 2px,
+    calc(100% - 2px) 100%,
+    calc(100% - 2px) 100%, calc(100% - 2px) calc(100% - 2px),
+    0 calc(100% - 2px),
+    0 calc(100% - 2px), 2px calc(100% - 2px)
+  );
+}
+
+.button_remove:hover {
+  color:rgb(204, 0, 0);
+  clip-path: polygon(
+    2px 0,
+    100% 0, 100% 2px,
+    100% 2px,
+    100% 100%, calc(100% - 2px) 100%,
+    calc(100% - 2px) 100%,
+    0 100%, 0 calc(100% - 2px),
+    0 calc(100% - 2px),
+    0 0, 2px 0
+  );
+}
+
+.imgTable {
+  width: 50px;
+  height: 50px;
+}

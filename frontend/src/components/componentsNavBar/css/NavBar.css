@@ -1,0 +1,91 @@
+.navbar {
+    background: #222222;
+    max-height: 3em;
+    font: italic 18px "Fira Sans", serif;
+}
+
+.navbar_brand {
+    margin-left: 10px;
+    color: white !important;
+}
+
+.link_home {
+    margin-left: 10px;
+    color: white !important;
+    cursor: pointer;
+}
+
+.link_home:hover {
+    color: grey !important;
+}
+
+.navDropdown {
+    margin-left: 10px;
+}
+
+.scroll-nav{
+    overflow: auto;
+    max-height: 150px;
+}
+
+#collasible-nav-dropdown {
+    color: white;
+    cursor: pointer;
+}
+  
+#collasible-nav-dropdown:hover {
+    color: grey;
+}
+
+#collasible_user_dropdown {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar_toggle {
+    border-radius: 10px;
+    border-color: white !important;
+}
+
+#collasible_user_dropdown:hover {
+    color: #FF0000;
+}
+
+.div-sign {
+    margin: 7px;
+}
+
+.sign {
+    margin-left: 10px;
+    position: relative;
+    color: white !important;
+    font-size: 1em;
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+
+.sign:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: gray; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.sign:hover:after,
+.sign:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.sign:hover {
+    color: gray;
+}
+
+.nav_dropdown_account {
+    margin-right: 5em;
+    cursor: pointer;
+}

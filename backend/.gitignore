@@ -1,0 +1,11 @@
+.idea
+dist
+node_modules
+.env
+yarn.lock
+coverage
+settings.dev.json
+build
+temp
+package-lock.json
+/appsettings.*

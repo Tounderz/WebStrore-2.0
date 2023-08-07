@@ -1,0 +1,40 @@
+.form_remove_products_brand {
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.button_remove_products_brand {
+    margin: 1%;
+    background: local;
+    color: #276AA2;
+    text-decoration: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #276AA2;
+}
+
+.button_remove_products_brand:hover {
+    letter-spacing: 0;
+    color: #276AA2;
+    border-color: #276AA2;
+    box-shadow: 0 0 20px #276AA2;
+}
+
+.button_remove_products_brand_close {
+    margin: 1%;
+    background: local;
+    color: #DF0000;
+    text-decoration: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #DF0000;
+}
+
+.button_remove_products_brand_close:hover {
+    letter-spacing: 0;
+    color: #DF0000;
+    border-color: #DF0000;
+    box-shadow: 0 0 20px #DF0000;
+}

@@ -1,0 +1,94 @@
+.homeFonPage {
+    background-image: url(../../../components/img/homeFon.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align:center;
+    align-items:initial;
+    position:absolute;
+    min-width:100%;
+    min-height: 100%;
+    color: #FFF;
+    text-shadow: -2px 0 0 #000000, 0 -2px 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, -2px -2px 0 #000000, 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+  }
+
+  .colListGroupHome {
+    margin-top: 10px;
+    max-width: 95vw;
+  }
+
+  .listBarndHome {
+    background: none;
+    cursor: pointer;
+  }
+
+  .listBrandItemHome {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 15px;
+    max-width: 95vw;
+    max-height: 150px;
+    background: none;
+  }
+
+  .listBrandItemHome:hover{
+    background-color: #000080;
+  }
+
+  .listBarndImgHome {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .listBrandNameHome {
+    text-align:center;
+    position:absolute;
+    width:100%;
+    bottom:10%;
+    color: #FFF;
+    text-shadow: -2px 0 0 #000080, 0 -2px 0 #000080, 2px 0 0 #000080, 0 2px 0 #000080, -2px -2px 0 #000080, 2px 2px 0 #000080, -2px 2px 0 #000080, 2px -2px 0 #000080;
+  }
+
+  .colCarouselHome {
+    margin-top: 10px;
+    max-width: 95vw;
+  }
+
+  .carouselHome {
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px #696969;
+  }
+
+  .carouselHome:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px #696969;
+  }
+
+  .imgCarouselHome {
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 30px;
+    display: block
+  }
+
+  .category-nameHome {
+    text-align:center;
+    position:absolute;
+    top: -150%;
+    width:100%;
+    bottom:10%;
+    color: #FFF;
+    text-shadow: -2px 0 0 #696969, 0 -2px 0 #696969, 2px 0 0 #696969, 0 2px 0 #696969, -2px -2px 0 #696969, 2px 2px 0 #696969, -2px 2px 0 #696969, 2px -2px 0 #696969;
+  }
+
+  .category-shortDescriptionHome {
+    text-align:center;
+    position:absolute;
+    left: -5px;
+    width:100%;
+    bottom:10%;
+    color: #FFF;
+    text-shadow: -2px 0 0 #2F4F4F, 0 -2px 0 #2F4F4F, 2px 0 0 #2F4F4F, 0 2px 0 #2F4F4F, -2px -2px 0 #2F4F4F, 2px 2px 0 #2F4F4F, -2px 2px 0 #2F4F4F, 2px -2px 0 #2F4F4F;
+}

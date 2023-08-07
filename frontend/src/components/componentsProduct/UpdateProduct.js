@@ -1,0 +1,332 @@
+import React, { useContext, useState } from 'react';
+import { Form, Modal, Button, FloatingLabel } from 'react-bootstrap';
+import {  fetchProducts, formDataProduct, updateProduct } from '../../http/productApi';
+import { Context } from '../../index';
+import { useInput } from '../../utils/validate';
+import { PAGE_FIRST, SELECT_AVAILABLE, SELECT_BRAND, SELECT_CATEGORY, SELECT_IS_FAVOURITE, SELECT_TYPE, TRUE_AND_FALSE } from '../../utils/const';
+import './css/UpdateProduct.css'
+import { observer } from 'mobx-react-lite';
+
+const UpdateProduct = observer(({show, onHide}) => {
+    const { product, category, brand, type, pagination } = useContext(Context);
+    const name = useInput('', {minLength: {value: 3, name: 'Name'}});
+    const categoryId = useInput(0, {isNumberId: {name: 'Category'}});
+    const brandId = useInput(0, {isNumberId: {name: 'Brand'}});
+    const typeId = useInput(0, {isNumberId: {name: 'Type'}});
+    const shortDescription = useInput('', {minLength: {value: 8, name: 'Short Description'}});
+    const price = useInput(0, {isPrice: {value: 1, name: 'Price'}});
+    const isFavourite = useInput('', {minLength: {value: 4, name: 'IsFavourite'}});
+    const available = useInput('', {minLength: {value: 4, name: 'Available'}});
+    const img = useInput(null, {isImg: { name: 'Img' }} );
+    const countView = useInput(0, {isPrice: {value: 0, name: 'Count View'}});
+    const [messageError, setMessageError] = useState('')
+    
+    const update = async () => {
+        try {
+            const formData = formDataProduct(
+                product.selectedProduct.id, name.value, categoryId.value,
+                typeId.value, brandId.value, shortDescription.value,
+                isFavourite.value, available.value, price.value, img.value, countView.value
+            );
+
+            await updateProduct(formData);
+            const data = await fetchProducts(PAGE_FIRST);
+                product.setProducts(data.products);
+                pagination.setCurrentPage(PAGE_FIRST);
+                pagination.setCountPages(data.countPages);
+                product.setSelectedProduct({});
+                close();
+        } catch (e) {
+            setMessageError(e?.response?.data?.message);
+        }
+    }
+
+    const close = () => {
+        name.onChange('');
+        document.getElementById(SELECT_CATEGORY).value = '0';
+        categoryId.onChange('');
+        document.getElementById(SELECT_TYPE).value = '0';
+        typeId.onChange('');
+        document.getElementById(SELECT_BRAND).value = '0';
+        brandId.onChange('');
+        document.getElementById(SELECT_IS_FAVOURITE).value = '0';
+        isFavourite.onChange('');
+        document.getElementById(SELECT_AVAILABLE).value = '0';
+        available.onChange('');
+        shortDescription.onChange('');
+        price.onChange(0);
+        img.saveImg(null);
+        countView.onChange(0);
+        setMessageError('');
+        onHide();
+    }
+
+    return (
+        <Modal
+            show={show}
+            onHide={close}
+            size="lg"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title 
+                    id='contained-modal-title-vcenter'
+                >
+                    {`Edit Product: ${product.selectedProduct.name}`}
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <div className='error_message'>{messageError}</div>
+                <Form>
+                    {(categoryId.isDirty && categoryId.isNumberError) && 
+                        <div className='error_message'>
+                            {categoryId.messageError}
+                        </div>}
+                    <FloatingLabel label='Selected Category'>
+                        <Form.Select
+                            className='form-update-product'
+                            id={SELECT_CATEGORY}
+                            onChange={e => categoryId.onChange(e)}
+                            onBlur={e => categoryId.onBlur(e)}
+                        >
+                            <option
+                                key='0'
+                                value='0'
+                            >
+                                {'Assigned category: ' + category?.categories?.find(categoryItem => 
+                                    categoryItem.id === product.selectedProduct.categoryId)?.name}
+                            </option>
+                                {category.categories.map(categoryItem => (
+                                    <option
+                                        key={categoryItem.id}
+                                        value={categoryItem.id}
+                                    >
+                                        {categoryItem.name}
+                                    </option>
+                                ))}
+                        </Form.Select>
+                    </FloatingLabel>
+
+                    {(typeId.isDirty && typeId.isNumberError) && 
+                        <div className='error_message'>
+                            {typeId.messageError}
+                        </div>}
+                    <FloatingLabel label='Selected Type'>
+                        <Form.Select
+                            id={SELECT_TYPE}
+                            className='form-update-product' 
+                            onChange={e => typeId.onChange(e)}
+                            onBlur={e => typeId.onBlur(e)}
+                        >
+                            <option
+                                key='0'
+                                value='0'
+                            >
+                                {'Assigned type: ' + type.types.find(item => 
+                                    item.id === product.selectedProduct.typeId)?.name
+                                }
+                            </option>
+                                {type.types.filter(type => type.categoryId === Number(categoryId.value)).map(type => (
+                                    <option
+                                        key={type.id}
+                                        value={type.id}
+                                    >
+                                        {type.name}
+                                    </option>
+                                ))}
+                        </Form.Select>
+                    </FloatingLabel>
+
+                    {(brandId.isDirty && brandId.isNumberError) && 
+                        <div className='error_message'>
+                            {brandId.messageError}
+                        </div>}
+                    <FloatingLabel label='Selected Brand'>
+                        <Form.Select
+                            id={SELECT_BRAND}
+                            className='form-update-product' 
+                            onChange={e => brandId.onChange(e)}
+                            onBlur={e => brandId.onBlur(e)}
+                        >
+                            <option
+                                key='0'
+                                value='0'
+                            >
+                                {'Assigned brand: ' + brand.brands.filter(brandItem => { 
+                                    return brandItem.id === product.selectedProduct.brandId})
+                                    .map(brandItem => brandItem.name)}
+                            </option>
+                                {brand.brands.map(brandItem => (
+                                    <option
+                                        key={brandItem.id}
+                                        value={brandItem.id}
+                                    >
+                                        {brandItem.name}
+                                    </option>
+                                ))}
+                        </Form.Select>
+                    </FloatingLabel>
+                    
+                    {(name.isDirty && name.minLengthError) && 
+                        <div className='error_message'>
+                            {name.messageError}
+                        </div>}
+                    <FloatingLabel label='Product name'>
+                        <Form.Control
+                            className='form-update-product' 
+                            value={name.value.length <= 0 ? 
+                                product.selectedProduct.name : 
+                                name.value}
+                            onChange={e => name.onChange(e)}
+                            onBlur={e => name.onBlur(e)}
+                            placeholder='Product name'
+                        />
+                    </FloatingLabel>
+
+                    {(shortDescription.isDirty && shortDescription.minLengthError) && 
+                        <div className='error_message'>
+                            {shortDescription.messageError}
+                        </div>}
+                    <FloatingLabel label='Short Description'>
+                        <Form.Control
+                            className='form-update-product' 
+                            value={shortDescription.value.length <= 0 ? 
+                                product.selectedProduct.shortDescription : 
+                                shortDescription.value}
+                            onChange={e => shortDescription.onChange(e)}
+                            onBlur={e => shortDescription.onBlur(e)}
+                            placeholder='Short Description'
+                        />
+                    </FloatingLabel>
+                
+                    {(isFavourite.isDirty && isFavourite.minLengthError) && 
+                        <div className='error_message'>
+                            {isFavourite.messageError}
+                        </div>}
+                    <FloatingLabel label='Selected IsFavourite'>
+                        <Form.Select
+                            id={SELECT_IS_FAVOURITE}
+                            className='form-update-product' 
+                            onChange={e =>isFavourite.onChange(e)}
+                            onBlur={e => isFavourite.onBlur(e)}
+                        >
+                            <option 
+                                key='0'
+                                value='0'
+                            >
+                                {`Assigned IsFavourite: ${product.selectedProduct.isFavourite}`}
+                            </option>
+                            {TRUE_AND_FALSE.map(item => (
+                                <option
+                                    key={item}
+                                    value={item}
+                                >
+                                    {item}
+                                </option>
+                            ))}
+                        </Form.Select>
+                    </FloatingLabel>
+
+                    {(available.isDirty && available.minLengthError) && 
+                        <div className='error_message'>
+                            {available.messageError}
+                        </div>}
+                    <FloatingLabel label='Selected Available'>
+                        <Form.Select
+                            id={SELECT_AVAILABLE}
+                            className='form-update-product' 
+                            onChange={e =>available.onChange(e)}
+                            onBlur={e => available.onBlur(e)}
+                        >
+                            <option 
+                                key='0'
+                                value='0'
+                            >
+                                {`Assigned IsFavourite: ${product.selectedProduct.available}`}
+                            </option>
+                            {TRUE_AND_FALSE.map(item => (
+                                <option
+                                    key={item}
+                                    value={item}
+                                >
+                                    {item}
+                                </option>
+                            ))}
+                        </Form.Select>
+                    </FloatingLabel>
+
+                    {(price.isDirty && price.priceError) && 
+                        <div className='error_message'>
+                            {price.messageError}
+                        </div>}
+                    <FloatingLabel label='Price'>
+                        <Form.Control
+                            className='form-update-product' 
+                            value={price.value > 0 ? price.value : product.selectedProduct.price}
+                            onChange={e => price.onChange(e)}
+                            onBlur={e => price.onBlur(e)}
+                            placeholder='Enter the cost of the product'
+                            type='number'
+                        />
+                    </FloatingLabel>
+
+                    {(countView.isDirty && countView.priceError) && 
+                        <div className='error_message'>
+                            {countView.messageError}
+                        </div>}
+                    <FloatingLabel label='Count View'>
+                        <Form.Control
+                            className='form-update-product' 
+                            value={countView.value > 0 ? countView.value : product.selectedProduct.countView}
+                            onChange={e => countView.onChange(e)}
+                            onBlur={e => countView.onBlur(e)}
+                            placeholder='Count View'
+                            type='number'
+                        />
+                    </FloatingLabel>
+
+                    {(img.isDirty && img.imgError) && 
+                        <div className='error_message'>
+                            {img.messageError}
+                        </div>}
+                    <Form.Control
+                        className='form-update-product' 
+                        type='file'
+                        onChange={e => img.saveImg(e)}
+                        onBlur={e => img.onBlur(e)}
+                    />
+                </Form>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button
+                    className='button_update_product'
+                    variant='link'
+                    disabled={
+                        !name.inputValid && 
+                        !categoryId.inputValid && 
+                        !typeId.inputValid && 
+                        !brandId.inputValid && 
+                        !price.inputValid && 
+                        !isFavourite.inputValid && 
+                        !available.inputValid && 
+                        !shortDescription.inputValid && 
+                        !img.inputValid &&
+                        !countView.inputValid
+                    }
+                    onClick={update}
+                >
+                    Update
+                </Button>
+                <Button 
+                    className='button_update_product_close'
+                    variant='link'
+                    onClick={close}
+                >
+                    Close
+                </Button>
+            </Modal.Footer>
+        </Modal>
+    );
+});
+
+export default UpdateProduct;

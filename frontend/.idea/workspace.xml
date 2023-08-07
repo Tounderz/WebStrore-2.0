@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac2258fb-f340-4df8-980d-31c023fe1fd3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/FileContentIndex/4684bf11-4015-4c6d-940b-921d2baf6e53.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/FileContentIndex/62e5889e-c9d2-424a-8d46-82c20d16cbb1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/FileContentIndex/700daecf-1a4f-42d7-bc28-3d36f0994e38.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/FileContentIndex/a85f993c-9103-485a-8ed2-b137746af84f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.vs/Web/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.vs/Web/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.vs/Web/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Web/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/WebLibrary/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/WebLibrary/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/WebLibrary/obj/Debug/WebLibrary.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/WebLibrary/obj/Debug/WebLibrary.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Auth.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O1E3ux1clws94inQX9Gb8QvAea" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/basta/source/repos/Web/frontend",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac2258fb-f340-4df8-980d-31c023fe1fd3" name="Changes" comment="" />
+      <created>1680719492575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680719492575</updated>
+      <workItem from="1680719495118" duration="270000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,86 @@
+.fonPageProduct {
+  background-image: url(../../../components/img/productFon.jpg);
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align:center;
+  align-items:initial;
+  position:absolute;
+  min-width: 100%;
+  min-height: 100%;
+  color: #FFF;
+  text-shadow: -2px 0 0 #000000, 0 -2px 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, -2px -2px 0 #000000, 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.containerProduct {
+  align-items: center;
+}
+
+.rowImgProduct {
+  margin-top: 3%;
+}
+
+.imgProduct {
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+  border-radius: 10%;
+  margin-top: 5%;
+}
+
+.colModalProduct {
+  margin-top: 5%;
+}
+
+.colCartProduct {
+  margin-top: 3%;
+  flex: column;
+}
+
+.cardProduct {
+  margin-top: 5%;
+  border: none;
+  background: none;
+}
+
+.addToCartProduct {
+  color: #FFF;
+  text-shadow: -2px 0 0 #000000, 0 -2px 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, -2px -2px 0 #000000, 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+  /* .button-addToCartProduct {
+    margin-top: 20%;
+    cursor: pointer;
+    max-width: 100px;
+    max-height: 100px;
+  } */
+
+.rowSpecificationsProduct  {
+  display: flex;
+  flex: column;
+  margin: 3%;
+}
+
+.tableProduct {
+  color: #FFF;
+}
+
+.button_create_info {
+  margin: 1%;
+  background: local;
+  color: #3AD505;
+  text-decoration: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 2px #3AD505;
+}
+
+.button_create_info:hover {
+  letter-spacing: 0;
+  color: #3AD505;
+  border-color: #3AD505;
+  box-shadow: 0 0 20px #3AD505;
+}
