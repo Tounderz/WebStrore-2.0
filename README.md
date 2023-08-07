@@ -1,13 +1,24 @@
-# Web shope
-1. Authorisation with JWT-Token.
-2. Refresh-Token to update the JWT-Token.
-3. Management by means of roles.
-4. Private Office.
-5. Cart.
-6. Order.
-7. Sending Registration Confirmation/Password Recovery/Restore Order Details/Restore User emails.
-8. Create/Edit/Delete user.
-9. Creating/Editing/Deleting a category.
-10. Creating/editing/deleting a brand.
-11. Creating/editing/deleting a type.
-12. Create/edit/delete payment method.
+# WebStore-2.0 (An updated version of the repository, called the Web)
+1. backend
+  1. Store.Api (web api .net 7)
+    1. CRUD category / brand / type / product / payment method.
+    2. Order placement.
+    3. Adding and removing products from the cart.
+    4. Sending an email about successful purchase.
+    5. Search category / brand / type / product / payment method.
+    6. Sorting categories / brands / types / products / payment methods.
+  2. Store.Data (libraries for store.Api)
+    1. Models category / brand / type / product / payment method /cart / order.
+    2. Const parameters.
+  3. UserManagementService (web api .net 7)
+    1. Authorisation with JWT-Token.
+    2. Refresh-Token to update the JWT-Token.
+    3. Management by means of roles.
+    4. Private Office.
+    5. Sending Registration Confirmation/Password Recovery/Restore Order Details/Restore User emails.
+    6. CRUD user.
+2. frontend
+  1. React JS (js, css)
+     1. Uses react-bootstrap / mobx / react-dom / react-router / react-router-dom / react-slick.
+     2. Adaptability for any device.
+     3. Check JWT token validity on every request.
