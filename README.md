@@ -1,12 +1,12 @@
 # WebStore-2.0 (An updated version of the repository, called the Web)
 1. backend
   1. Store.Api (web api .net 7)
-    1) CRUD category / brand / type / product / payment method.
-    2) Order placement.
-    3) Adding and removing products from the cart.
-    4) Sending an email about successful purchase.
-    5) Search category / brand / type / product / payment method.
-    6) Sorting categories / brands / types / products / payment methods.
+    1. CRUD category / brand / type / product / payment method.
+    2. Order placement.
+    3. Adding and removing products from the cart.
+    4. Sending an email about successful purchase.
+    5. Search category / brand / type / product / payment method.
+    6. Sorting categories / brands / types / products / payment methods.
   2. Store.Data (libraries for store.Api)
     1. Models category / brand / type / product / payment method /cart / order.
     2. Const parameters.
